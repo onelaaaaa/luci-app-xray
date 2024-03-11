@@ -18,9 +18,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - arch: ramips-mt7621
-            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/ramips/mt7621
-            sdk_name: -sdk-ramips-mt7621_
+          - arch: x86_64
+            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/x86/64
+            sdk_name: -sdk-x86-64_
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
